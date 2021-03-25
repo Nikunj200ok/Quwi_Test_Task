@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/headerLayout"
+            layout="@layout/header_layout"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:padding="@dimen/_20sdp">
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="end">
+             <ImageView
+                 android:id="@+id/img_edit"
+                 android:layout_width="@dimen/_32sdp"
+                 android:layout_height="@dimen/_32sdp"
+                 android:src="@drawable/ic_edit_black_24dp"/>
+         </LinearLayout>-->
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="start|center">
+             <ImageView
+                 android:id="@+id/img_propic"
+                 android:layout_width="@dimen/_60sdp"
+                 android:layout_height="@dimen/_60sdp"
+                 android:adjustViewBounds="true"/>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:gravity="start|center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:gravity="start|center">
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:singleLine="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center|end">
+                  <ImageView
+                      android:id="@+id/img_edit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/_10sdp"
+                      android:layout_alignParentEnd="true"/>
+              </LinearLayout>
+
+             </RelativeLayout>
+
+         </LinearLayout>
+
+     </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#c0c0c0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lbl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:singleLine="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleruser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/lbl_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Workers not found"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_16sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

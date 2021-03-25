@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="edittext_height">@dimen/_30sdp</dimen>
+    <dimen name="edittext_bgheight">@dimen/_80sdp</dimen>
+
+</resources>

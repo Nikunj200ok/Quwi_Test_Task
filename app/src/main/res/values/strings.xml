@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quwi App</string>
+    <string name="ok">OK</string>
+
+    <string name="error_email">Please enter email</string>
+    <string name="error_name">Please enter project name</string>
+    <string name="error_email_valid">Please enter valid email</string>
+    <string name="error_password">Please enter password</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection</string>
+    <string name="project_detail">Project Detail</string>
+    <string name="project_list">Project List</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="quwi_">QUWI</string>
+
+</resources>
